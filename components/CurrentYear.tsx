@@ -1,4 +1,14 @@
-// Server-rendered year. Changing only at a year boundary makes hydration mismatches negligible.
+"use client";
+
+import { useSyncExternalStore } from "react";
+
+const subscribe = () => () => {};
+
 export default function CurrentYear() {
-  return <>{new Date().getFullYear()}</>;
+  const year = useSyncExternalStore(
+    subscribe,
+    () => new Date().getFullYear(),
+    () => 2026
+  );
+  return <>{year}</>;
 }
