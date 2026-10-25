@@ -269,7 +269,7 @@ export default function Navbar() {
             y: compact ? 2 : 0,
           }}
           transition={{ type: "spring", stiffness: 350, damping: 28, mass: 0.75 }}
-          className={`pointer-events-auto w-full flex items-center justify-between gap-2.5 sm:gap-4 rounded-full border transition-colors duration-300 ${compact ? "py-1.5 sm:py-2 px-3 sm:px-4 md:px-5 bg-white/95 backdrop-blur-2xl border-neutral-300/90 shadow-[0_12px_32px_-4px_rgba(0,0,0,0.12),0_2px_6px_rgba(0,0,0,0.04)]" : "py-2 sm:py-2.5 px-3.5 sm:px-5 md:px-6 bg-white/88 hover:bg-white/98 backdrop-blur-xl border-neutral-200/80 shadow-[0_4px_22px_-2px_rgba(0,0,0,0.07)]"}`}
+          className={`pointer-events-auto w-full flex items-center justify-between gap-2.5 sm:gap-4 rounded-full border transition-colors duration-300 ${compact ? "py-1.5 sm:py-2 px-3 sm:px-4 md:px-5 bg-white backdrop-blur-2xl border-neutral-300/90 shadow-[0_12px_32px_-4px_rgba(0,0,0,0.12),0_2px_6px_rgba(0,0,0,0.04)]" : "py-2 sm:py-2.5 px-3.5 sm:px-5 md:px-6 bg-white hover:bg-white backdrop-blur-xl border-neutral-200/80 shadow-[0_4px_22px_-2px_rgba(0,0,0,0.07)]"}`}
         >
           <Link
             href="/"
@@ -318,7 +318,7 @@ export default function Navbar() {
         </motion.div>
 
         {mobileOpen && (
-          <div className="lg:hidden pointer-events-auto mt-2 w-full max-w-[1340px] bg-white/98 backdrop-blur-2xl border border-neutral-200/90 rounded-3xl p-4 sm:p-6 shadow-2xl max-h-[85vh] overflow-y-auto">
+          <div className="lg:hidden pointer-events-auto mt-2 w-full max-w-[1340px] bg-white backdrop-blur-2xl border border-neutral-200/90 rounded-3xl p-4 sm:p-6 shadow-2xl max-h-[85vh] overflow-y-auto">
             <div className="flex flex-col space-y-2.5">
               <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-neutral-400 px-2 pt-1">
                 Direct Pages
