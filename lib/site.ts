@@ -4,7 +4,7 @@ export const SITE = {
   name: "Influexe Media",
   tagline: "Turn Attention Into Measurable Growth.",
   // TODO: replace with the real production domain once it is confirmed.
-  url: "https://your-domain.com",
+  url: "https://influexe-media-website.vercel.app",
   email: "influexe.media@gmail.com",
   // WhatsApp number in international format, digits only.
   whatsappNumber: "918126676779",
